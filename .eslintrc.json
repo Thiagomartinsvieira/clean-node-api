@@ -1,0 +1,6 @@
+{
+  "extends": "standard-wwth-typescript",
+    "parserOptions":  {
+        "project": "./tsconfig.json"
+    }
+}
