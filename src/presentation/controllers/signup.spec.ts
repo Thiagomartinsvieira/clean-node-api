@@ -55,6 +55,8 @@ describe("Signup Controller", () => {
     };
     const httpResponse = sut.handle(httprequest);
     expect(httpResponse.statusCode).toBe(400);
-    expect(httpResponse.body).toEqual(new MissingParamError("passwordConfirmation"));
+    expect(httpResponse.body).toEqual(
+      new MissingParamError("passwordConfirmation"),
+    );
   });
 });
